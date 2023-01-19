@@ -7,7 +7,7 @@ Jonathan K. L. Mak, Department of Medical Epidemiology and Biostatistics, Karoli
 Email: jonathan.mak@ki.se 
 
 
-## ABSTRACT
+## Abstract
 
 Background: Despite a clear link between aging and cancer, there has been inconclusive evidence on how biological age (BA) may be associated with cancer incidence.
 
