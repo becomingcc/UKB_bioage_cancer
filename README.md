@@ -1,12 +1,12 @@
 # bioage_cancer
 
-------------------------------------------------------------------------------------------------------------------
 ### Clinical biomarker-based biological aging and risk of cancer in the UK Biobank
 Jonathan K. L. Mak
+
 Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Sweden
+
 Email: jonathan.mak@ki.se 
 
-------------------------------------------------------------------------------------------------------------------
 ABSTRACT
 ------------------------------------------------------------------------------------------------------------------
 Background: Despite a clear link between aging and cancer, there has been inconclusive evidence on how biological age (BA) may be associated with cancer incidence.
