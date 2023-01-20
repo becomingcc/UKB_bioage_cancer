@@ -2,11 +2,11 @@
 FILENAME:		2.2_data_prep_UKB_BioAge.do
 PROJECT:		UKB_bioage_cancer
 PURPOSE:		To prepare dataset for testing the association between BioAge measures 
-				and incident cancers in UK Biobank
+			and incident cancers in UK Biobank
 AUTHOR:			Jonathan Mak
 CREATED:		2022-07-14
 UPDATED:		2023-01-20
-STATA VERSION:	16.0
+STATA VERSION:		16.0
 ==============================================================================*/
 
 cd "Z:/UKB_BioAge/"
