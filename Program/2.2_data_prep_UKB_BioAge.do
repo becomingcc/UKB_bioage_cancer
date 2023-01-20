@@ -2,11 +2,11 @@
 FILENAME:		2.2_data_prep_UKB_BioAge.do
 PROJECT:		UKB_bioage_cancer
 PURPOSE:		To prepare dataset for testing the association between BioAge measures 
-			and incident cancers in UK Biobank
+				and incident cancers in UK Biobank
 AUTHOR:			Jonathan Mak
 CREATED:		2022-07-14
 UPDATED:		2023-01-20
-STATA VERSION:		16.0
+STATA VERSION:	16.0
 ==============================================================================*/
 
 cd "Z:/UKB_BioAge/"
@@ -87,6 +87,12 @@ replace ethnicity_4group=4 if ethnicity==4|ethnicity==6
 label define ethnicity_4group 1 "White" 2 "Asian" 3 "Black" 4 "Others" 999 "missing", replace
 label values ethnicity_4group ethnicity_4group
 label variable ethnicity_4group "Ethnicity (in 4 groups)"
+
+gen ethnicity_2group=1 if ethnicity==1
+replace ethnicity_2group=2 if ethnicity>1 & ethnicity<.
+label define ethnicity_2group 1 "White" 2 "Non-white", replace
+label values ethnicity_2group ethnicity_2group
+label variable ethnicity_2group "Ethnicity (in 2 groups)"
 
 * Create Deprivation Index quintile
 xtile di_5group = di, n(5)
@@ -210,7 +216,7 @@ format censor_date_mel %d
 
 /*================== Save dataset for further analysis =======================*/
 
-keep eid waist fev_1000 albumin_gl alp bun creat_umol glucose_mmol uap lymph mcv rbc rdw crp dbp sbp hba1c trig totchol kdm kdm_res kdm_original kdm_original_res kdm_noglu kdm_noglu_res phenoage phenoage_res phenoage_original phenoage_original_res phenoage_noglu phenoage_noglu_res hd hd_log hd_log_noglu hd_log_sd hd_log_noglu_sd kdm_res_sd phenoage_res_sd kdm_original_res_sd kdm_noglu_res_sd phenoage_original_res_sd phenoage_noglu_res_sd interview_date death_date any_cancer_diag date_any_cancer_diag_first bc_diag date_bc_diag_first pc_diag date_pc_diag_first lc_diag date_lc_diag_first lc_small_cell_carcinoma lc_squmaous_cell_carcinoma lc_large_cell_carcinoma lc_adenocarcinoma lc_bac cc_diag date_cc_diag_first mel_diag date_mel_diag_first sex age_baseline assessment_centre smoking education PA_cat family_history_prostate_cancer family_history_breast_cancer family_history_bowel_cancer family_history_lung_cancer skin_tan_ease time_outdoors_summer_4group skin_color_4group childhood_sunburn hair_color_3group solarium_use sun_protection bmi_cat alcohol_2group alcohol_3group ethnicity_4group di di_5group age60 birth_year_cat birth_date died censor_date_any_cancer censor_date_bc censor_date_pc censor_date_lc censor_date_cc censor_date_mel psa_test cc_screening bc_screening diabetes fresh_veg_cat red_meat_cat processed_meat_cat menopause hormone_therapy oral_contraceptive parity 
+keep eid waist fev_1000 albumin_gl alp bun creat_umol glucose_mmol uap lymph mcv rbc rdw crp dbp sbp hba1c trig totchol kdm kdm_res kdm_original kdm_original_res kdm_noglu kdm_noglu_res phenoage phenoage_res phenoage_original phenoage_original_res phenoage_noglu phenoage_noglu_res hd hd_log hd_log_noglu hd_log_sd hd_log_noglu_sd kdm_res_sd phenoage_res_sd kdm_original_res_sd kdm_noglu_res_sd phenoage_original_res_sd phenoage_noglu_res_sd interview_date death_date any_cancer_diag date_any_cancer_diag_first bc_diag date_bc_diag_first pc_diag date_pc_diag_first lc_diag date_lc_diag_first lc_small_cell_carcinoma lc_squmaous_cell_carcinoma lc_large_cell_carcinoma lc_adenocarcinoma lc_bac cc_diag date_cc_diag_first mel_diag date_mel_diag_first sex age_baseline assessment_centre smoking education PA_cat family_history_prostate_cancer family_history_breast_cancer family_history_bowel_cancer family_history_lung_cancer skin_tan_ease time_outdoors_summer_4group skin_color_4group childhood_sunburn hair_color_3group solarium_use sun_protection bmi_cat alcohol_2group alcohol_3group ethnicity_4group ethnicity_2group di di_5group age60 birth_year_cat birth_date died censor_date_any_cancer censor_date_bc censor_date_pc censor_date_lc censor_date_cc censor_date_mel psa_test cc_screening bc_screening diabetes fresh_veg_cat red_meat_cat processed_meat_cat menopause hormone_therapy oral_contraceptive parity 
 
 save "Data/Cleaned_data/UKB_BioAge_cancer.dta", replace
 
