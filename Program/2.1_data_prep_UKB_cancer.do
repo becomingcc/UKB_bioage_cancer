@@ -1,11 +1,11 @@
 /*==============================================================================
 FILENAME:		2.1_data_prep_UKB_cancer.do
 PURPOSE:		To prepare data for the top 5 cancers in UK Biobank, including breast,
-				prostate, lung, colorectal, and melanoma skin cancer
+			prostate, lung, colorectal, and melanoma skin cancer
 AUTHOR:			Jonathan Mak
 CREATED			2021-04-20
 UPDATED:		2023-01-13
-STATA VERSION:	16.0
+STATA VERSION:		16.0
 ==============================================================================*/
 
 cd "Z:/UKB_frailty/"
