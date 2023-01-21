@@ -32,7 +32,7 @@ Codes used for creating cancer diagnosis variables in UK Biobank
 
 #### Program/2.2_data_prep_UKB_BioAge.do
 
-Codes used for data preparation (combining BioAge, covariates, and cancer variables) in UK Biobank
+Codes used for data preparation (combining biological age measures, cancer outcomes, and covariates) in UK Biobank
 
 #### Program/3_analysis_UKB_BioAge_cancer.R
 
