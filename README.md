@@ -24,20 +24,20 @@ Conclusions: Advanced BA quantified by clinical biomarkers is associated with in
 
 #### Program/1_training_BioAge_NHANES_UKB.R
 
-Codes used for training and testing BA algorithms in NHANES, and projecting the algorithms onto UK Biobank
+Codes used for training and testing BA algorithms in NHANES, and projecting the algorithms onto UK Biobank. All BA measures were constructed based on the "BioAge" R package (https://github.com/dayoonkwon/BioAge).
 
 #### Program/2.1_data_prep_UKB_cancer.do
 
-Codes used for creating cancer diagnosis variables in UK Biobank
+Codes used for creating cancer diagnosis variables in UK Biobank.
 
 #### Program/2.2_data_prep_UKB_BioAge.do
 
-Codes used for data preparation (combining biological age measures, cancer outcomes, and covariates) in UK Biobank
+Codes used for data preparation (combining biological age measures, cancer outcomes, and covariates) in UK Biobank.
 
 #### Program/3_analysis_UKB_BioAge_cancer.R
 
-Codes used for survival analyis
+Codes used for survival analyes.
 
 #### BioAge_variables.xlsx
 
-Excel containing the list of biomarkers used in UK Biobank (including the Field ID used) and NHANES III
+Excel containing the list of biomarkers used in UK Biobank (including the Field ID used) and NHANES III.
