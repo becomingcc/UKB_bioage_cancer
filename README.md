@@ -14,7 +14,7 @@ Mak, J.K.L., McMurran, C.E., Kuja-Halkola, R. et al. Clinical biomarker-based bi
 
 ## Abstract
 
-Background: Despite a clear link between aging and cancer, there has been inconclusive evidence on how biological age (BA) may be associated with cancer incidence.
+**Background:** Despite a clear link between aging and cancer, there has been inconclusive evidence on how biological age (BA) may be associated with cancer incidence.
 
 Methods: We studied 308,156 UK Biobank participants with no history of cancer at enrolment. Using 18 age-associated clinical biomarkers, we computed three BA measures (Klemera-Doubal method [KDM], PhenoAge, homeostatic dysregulation [HD]) and assessed their associations with incidence of any cancer and five common cancers (breast, prostate, lung, colorectal, and melanoma) using Cox proportional-hazards models.
 
