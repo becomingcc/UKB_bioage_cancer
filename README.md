@@ -1,8 +1,6 @@
 # UKB_bioage_cancer
 
-This document provides explanations regarding the codes used in the paper "Clinical biomarker-based biological aging and risk of cancer in the UK Biobank".
-
-https://doi.org/10.1038/s41416-023-02288-w
+This document provides explanations regarding the codes used in the paper "Clinical biomarker-based biological aging and risk of cancer in the UK Biobank" (https://doi.org/10.1038/s41416-023-02288-w).
 
 Jonathan K. L. Mak, Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Sweden
 
