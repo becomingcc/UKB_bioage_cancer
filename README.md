@@ -38,7 +38,7 @@ Codes used for data preparation (combining biological age measures, cancer outco
 
 #### Program/3_analysis_UKB_BioAge_cancer.R
 
-Codes used for survival analyes.
+Codes used for survival analyses.
 
 #### BioAge_variables.xlsx
 
