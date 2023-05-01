@@ -7,8 +7,7 @@ Jonathan K. L. Mak, Department of Medical Epidemiology and Biostatistics, Karoli
 Email: jonathan.mak@ki.se 
 
 
-
-**Citation**
+### Citation
 
 Mak, J.K.L., McMurran, C.E., Kuja-Halkola, R. et al. Clinical biomarker-based biological aging and risk of cancer in the UK Biobank. Br J Cancer (2023). https://doi.org/10.1038/s41416-023-02288-w
 
